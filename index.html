@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ใบสมัครเข้าแคลน - LUNA VEX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e2e8f0;
+            font-family: 'Mali', cursive;
+            color: #1e293b;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            margin: 0;
+        }
+
+        .form-card {
+            background: #f8fafc;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border: 2px solid #cbd5e1;
+        }
+
+        .header {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+
+        .sub-title-left {
+            text-align: left;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .main-title {
+            font-size: 2.2rem;
+            margin: 5px 0;
+            font-weight: 700;
+        }
+
+        .game-tag {
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            color: #64748b;
+            margin-bottom: 5px;
+        }
+
+        .form-badge {
+            background-color: #1e3a8a;
+            color: white;
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 1rem;
+            margin: 8px 0;
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        .section-badge {
+            background-color: #cbd5e1;
+            color: #1e3a8a;
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 14px;
+            font-size: 0.95rem;
+        }
+
+        .form-group.inline {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        input[type="text"], input[type="number"], textarea {
+            border: none;
+            border-bottom: 2px solid #94a3b8;
+            background: transparent;
+            outline: none;
+            font-family: 'Mali', cursive;
+            font-size: 0.95rem;
+            padding: 4px 6px;
+            flex: 1;
+        }
+
+        input[type="text"]:focus, textarea:focus {
+            border-bottom-color: #1e3a8a;
+        }
+
+        textarea {
+            width: 100%;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            resize: vertical;
+            margin-top: 5px;
+            padding: 8px;
+        }
+
+        .options-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 6px;
+        }
+
+        .note-box {
+            background-color: #e2e8f0;
+            border-radius: 12px;
+            padding: 10px 12px;
+            font-size: 0.8rem;
+            margin-top: 20px;
+        }
+
+        .note-title {
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+
+        .note-box ul {
+            margin: 4px 0 0 16px;
+            padding: 0;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 12px;
+            font-family: 'Mali', cursive;
+            font-size: 1.05rem;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.2s;
+        }
+
+        .submit-btn:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-card">
+        <header class="header">
+            <div class="sub-title-left">LUNA VEX Family ♡</div>
+            <h1 class="main-title">LUNA VEX</h1>
+            <div class="game-tag">FREE FIRE</div>
+            <div class="form-badge">★ ใบสมัครเข้าแคลน ★</div>
+            <p class="subtitle">กรอกข้อมูลให้ครบถ้วน เพื่อให้เรารู้จักคุณมากขึ้นนะ :)</p>
+        </header>
+
+        <form id="clanForm">
+            <div class="section-badge">ข้อมูลส่วนตัว</div>
+
+            <div class="form-group inline">
+                <label>ชื่อเล่น :</label>
+                <input type="text" name="nickname" placeholder="ระบุชื่อเล่น" required>
+            </div>
+
+            <div class="form-group inline">
+                <label>UID :</label>
+                <input type="text" name="uid" placeholder="ระบุ UID" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group inline">
+                    <label>อายุ :</label>
+                    <input type="number" name="age" style="width: 70px;" required>
+                </div>
+                <div class="form-group inline">
+                    <label>แรงค์ปัจจุบัน :</label>
+                    <input type="text" name="rank" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>ตำแหน่งที่ถนัด :</label>
+                <div class="options-group">
+                    <label><input type="checkbox" name="role" value="ยิง"> ยิง</label>
+                    <label><input type="checkbox" name="role" value="ซัพพอร์ต"> ซัพพอร์ต</label>
+                    <label><input type="checkbox" name="role" value="เก็บของ"> เก็บของ</label>
+                    <label><input type="checkbox" name="role" value="อื่น ๆ"> อื่น ๆ</label>
+                </div>
+            </div>
+
+            <div class="form-group inline">
+                <label>ไมค์ / ไม่ไมค์ :</label>
+                <div class="options-group inline">
+                    <label><input type="radio" name="mic" value="มี" required> มี</label>
+                    <label><input type="radio" name="mic" value="ไม่มี"> ไม่มี</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>ช่วงเวลาที่เล่น :</label>
+                <div class="options-group">
+                    <label><input type="checkbox" name="playtime" value="เช้า"> เช้า</label>
+                    <label><input type="checkbox" name="playtime" value="บ่าย"> บ่าย</label>
+                    <label><input type="checkbox" name="playtime" value="เย็น"> เย็น</label>
+                    <label><input type="checkbox" name="playtime" value="ดึก"> ดึก</label>
+                    <label><input type="checkbox" name="playtime" value="แล้วแต่เวลา"> แล้วแต่เวลา</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>แนะนำตัวสั้น ๆ :</label>
+                <textarea name="intro" rows="3" placeholder="แนะนำตัวหน่อยจ้า"></textarea>
+            </div>
+
+            <div class="note-box">
+                <div class="note-title">✈ หมายเหตุ</div>
+                <ul>
+                    <li>ข้อมูลทั้งหมดจะถูกใช้เพื่อการพิจารณาเข้าร่วมแคลนเท่านั้น</li>
+                    <li>หากผ่านการคัดเลือก จะมีการติดต่อกลับทางเกมหรือช่องทางที่คุณสะดวก</li>
+                    <li>ขอบคุณที่สนใจเข้าร่วมครอบครัว LUNA VEX นะครับ/ค่ะ ♡</li>
+                </ul>
+            </div>
+
+            <button type="submit" class="submit-btn">ส่งใบสมัคร</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('clanForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nickname = document.querySelector('input[name="nickname"]').value;
+            const UID = document.querySelector('input[name="uid"]').value;
+            const age = document.querySelector('input[name="age"]').value;
+            const rank = document.querySelector('input[name="rank"]').value;
+            
+            const roles = Array.from(document.querySelectorAll('input[name="role"]:checked')).map(el => el.value).join(', ') || 'ไม่ได้ระบุ';
+            const mic = document.querySelector('input[name="mic"]:checked') ? document.querySelector('input[name="mic"]:checked'].value : 'ไม่ได้ระบุ';
+            const playtimes = Array.from(document.querySelectorAll('input[name="playtime"]:checked')).map(el => el.value).join(', ') || 'ไม่ได้ระบุ';
+            const intro = document.querySelector('textarea[name="intro"]').value || '-';
+
+            const message = `★ ใบสมัครเข้าแคลน LUNA VEX ★\n` +
+                            `--------------------------\n` +
+                            `👤 ชื่อเล่น: ${nickname}\n` +
+                            `🆔 UID: ${UID}\n` +
+                            `🎂 อายุ: ${age}\n` +
+                            `🏆 แรงค์: ${rank}\n` +
+                            `🎯 ตำแหน่ง: ${roles}\n` +
+                            `🎤 ไมค์: ${mic}\n` +
+                            `⏰ เวลาที่เล่น: ${playtimes}\n` +
+                            `📝 แนะนำตัว: ${intro}\n` +
+                            `--------------------------`;
+
+            // แปลงข้อความให้อยู่ในรูปแบบลิงก์ปลอดภัย
+            const encodedMessage = encodeURIComponent(message);
+
+            // ใช้ลิงก์ตรงเพื่อเด้งเข้าแชท/กลุ่ม พร้อมส่งข้อความไปหาทันที
+            // (เนื่องจากลิงก์กลุ่มเชิญของ Messenger อาจจำกัดการส่งข้อความพ่วงท้าย ระบบจะใช้ลิงก์แชทหลักหรือสำรองเพื่อความชัวร์ หรือเปลี่ยนเป็นลิงก์แชทส่วนตัวของคุณได้ครับ)
+            const facebookUsernameOrChatLink = "https://m.me/YOUR_FACEBOOK_USERNAME"; // <-- ถ้าจะใช้แชทส่วนตัวคุณ ใส่ m.me/ชื่อเฟส หรือใช้ลิงก์กลุ่มเดิม
+            
+            // หรือถ้าต้องการเด้งไปที่ลิงก์กลุ่มเดิมของคุณโดยตรงแบบคลิกเดียว:
+            const groupLink = "https://m.me/j/TxwrUaBfnGrOpj9l/?send_source=gc%3Acopy_invite_link_t";
+
+            // สั่งเด้งเปิดหน้าแชททันที
+            window.location.href = groupLink;
+        });
+    </script>
+</body>
+</html>

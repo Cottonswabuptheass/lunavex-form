@@ -1,0 +1,152 @@
+body {
+    background-color: #e2e8f0;
+    font-family: 'Mali', cursive;
+    color: #1e293b;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: 0;
+}
+
+.form-card {
+    background: #f8fafc;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border: 2px solid #cbd5e1;
+}
+
+.header {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.sub-title-left {
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.main-title {
+    font-size: 2.2rem;
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+.game-tag {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #64748b;
+    margin-bottom: 5px;
+}
+
+.form-badge {
+    background-color: #1e3a8a;
+    color: white;
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin: 8px 0;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.section-badge {
+    background-color: #cbd5e1;
+    color: #1e3a8a;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 14px;
+    font-size: 0.95rem;
+}
+
+.form-group.inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+input[type="text"], input[type="number"], textarea {
+    border: none;
+    border-bottom: 2px solid #94a3b8;
+    background: transparent;
+    outline: none;
+    font-family: 'Mali', cursive;
+    font-size: 0.95rem;
+    padding: 4px 6px;
+    flex: 1;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-bottom-color: #1e3a8a;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    resize: vertical;
+    margin-top: 5px;
+}
+
+.options-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.note-box {
+    background-color: #e2e8f0;
+    border-radius: 12px;
+    padding: 10px 12px;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+.note-title {
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.note-box ul {
+    margin: 4px 0 0 16px;
+    padding: 0;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-family: 'Mali', cursive;
+    font-size: 1.05rem;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #2563eb;
+}
